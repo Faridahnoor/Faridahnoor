@@ -575,5 +575,10 @@
             width: 310px;
     }
     }
+    @media (max-width: 660px){
+        body{
+            zoom: 40%;
+        }
+    }
         
        
