@@ -509,7 +509,7 @@
             transition: .3s;
         }
     }
-    @media (max-width: 925px){
+    @media (max-width: 970px){
         #menu-icon{
             display: block;
         }
@@ -545,7 +545,7 @@
             top: 100%;
         }
     }
-    @media (max-width: 925px){
+    @media (max-width: 800px){
         .home{
             grid-template-columns: 1fr;
             min-height: 130vh;
@@ -589,7 +589,7 @@
         width: 100%;
         position: fixed;
         z-index: 100;
-        background: white url(a.gif) no-repeat;
+        background: whiteh url(a.gif) no-repeat;
     
     }
         
