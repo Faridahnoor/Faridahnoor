@@ -520,13 +520,18 @@
             display: block;
         }
         .navlist label h3{
-            font-size: 35px;
+            font-size: 75px;
             padding-right: 20px;
             cursor: pointer;
+            position: absolute;
+            left: 1130px;
+            bottom: 400px;
+            
         }
         #check:checked ~ .navlist{
             top: 0;
         }
+        
         #menu-icon{
             display: block;
         }
@@ -539,9 +544,10 @@
             left: 0;
             right: 0;
             flex-direction: column;
-           
             text-align: right;
             transition: all .40s;
+            background: none;
+            padding-top: 80px;
         }
         .navlist a{
             display: block;
@@ -549,6 +555,7 @@
             margin: 1.5rem;
             border-right: 2px solid var(--bg-color);
             color: black;
+         
         }
         .navlist a:hover{
             
