@@ -508,8 +508,25 @@
             --p-font: 1rem;
             transition: .3s;
         }
+        input[type="checkbox"]{
+            display: none;
+        }
+        .navlist label{
+            display: none;
+        }
     }
     @media (max-width: 970px){
+        .navlist label{
+            display: block;
+        }
+        .navlist label h3{
+            font-size: 50px;
+            padding-right: 20px;
+            cursor: pointer;
+        }
+        #check:checked ~ .navlist{
+            top: 0;
+        }
         #menu-icon{
             display: block;
         }

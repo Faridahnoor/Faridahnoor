@@ -33,9 +33,12 @@
     <!----------header--------->
     <header>
         <a href="" class="logo"><img src="user/fareedah3.jpeg"></a>
+        <input type="checkbox" id="check">
+        <label for="check">
         <div class="bx bx-menu" id="menu-icon"></div>
-
+    </label>
         <ul class="navlist">
+            <label for="check"><h3>x</h3></label>
             <li><a href="#home">Home</a></li> 
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
@@ -72,21 +75,25 @@
                     <img src="user/pixel.png">
                 </div>
                 <h3>Pixel Perfect</h3>
-                <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+        <p>Websites alignment are maintain perfectly. The format is precisely controlled, and the website
+                    will look identical on different devices, without any changes or adjustments.</p>
             </div>
             <div class="sub-box">
                 <div class="sub-img">
                     <img src="user/quality2.jpeg">
                 </div>
                 <h3>High Quality</h3>
-                <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p> 
+        <p>Developing well-written and informative content for visitors. Quality content is original, purposeful,
+            and correctly optimized information that people and search engines are driven to read, view, and share
+
+        </p> 
         </div>
         <div class="sub-box">
             <div class="sub-img">
                 <img src="user/awesome2.jpeg">
             </div>
             <h3>Awesome Idea</h3>
-            <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p> 
+            <p>Working on a website in a different niche gives rise to awesome and creative ideas</p> 
     </div>
     </section>
     <!---------about--------->
@@ -177,7 +184,8 @@
                 <h3>Web Design</h3>
                 <h5>Start From <span>$99</span></h5>
                 <p>Web design refers to the design of websites that are displayed on the internet.
-                It usually refers to the user experience aspects of website development</p>
+                   We meet with clients to review website templates or refine their designs and running tests to preview layouts and website 
+                   feature</p>
             </div>
             <div class="row">
                 <div class="s s-two">
@@ -185,8 +193,7 @@
                 </div>
                 <h3>Web Design</h3>
                 <h5>Start From <span>$99</span></h5>
-                <p>Web design refers to the design of websites that are displayed on the internet.
-                It usually refers to the user experience aspects of website development</p>
+                <p>We design the overall layout and aesthetic for websites, maintaining the appearance of websites by enforcing content standards</p>
             </div>
             <div class="row">
                 <div class="s s-three">
@@ -194,8 +201,8 @@
                 </div>
                 <h3>Web Design</h3>
                 <h5>Start From <span>$99</span></h5>
-                <p>Web design refers to the design of websites that are displayed on the internet.
-                It usually refers to the user experience aspects of website development</p>
+                <p>We code webpages or entire websites and also design visual imagery for websites and ensuring that they are in line with 
+                   branding for clients</p>
             </div>
             <div class="row">
                 <div class="s s-four">
@@ -203,8 +210,7 @@
                 </div>
                 <h3>Web Design</h3>
                 <h5>Start From <span>$99</span></h5>
-                <p>Web design refers to the design of websites that are displayed on the internet.
-                It usually refers to the user experience aspects of website development</p>
+                <p>We establish design guidelines, standards, and best practices</p>
             </div>
 
 
@@ -264,17 +270,6 @@
             header.classList.toggle ("sticky", window.scrollY > 0)
         });
 
-        let menu = document.querySelector('#menu-icon');
-        let navlist = document.querySelector('.navlist');
-        menu.onclick = () => {
-            menu.classList.toggle('bx-x');
-            navlist.classList.toggle('active');
-        };
-        
-        window.onscroll = () => {
-            menu.classList.remove('bx-x');
-            navlist.classList.remove('active');
-        };
         const sr = ScrollReveal ({
             distance: '45px',
             duration: 2700,
@@ -284,5 +279,6 @@
         sr.reveal('.home-text', {delay:350, origin:'left'})
         sr.reveal('.sub-service', {delay:350, origin:'left'})
     </script>   
+    <script src="index.js"></script>
 </body>
 </html>
